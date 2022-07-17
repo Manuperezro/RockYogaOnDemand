@@ -1,0 +1,312 @@
+.card-stori{
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgb(47 50 56 / 20%), 3px 10px 0 rgb(47 50 56 / 19%);
+
+  }
+  
+  .overlay-story {
+  top: 30%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  opacity: .8;
+  position: absolute;
+  bottom: 151px;
+  right: 0;
+  width: 33%;
+  margin: 48px;
+  padding: inherit;
+  box-sizing: border-box;
+  line-height: 1.5;
+  text-align: center;
+  color: rgb(130, 138, 66);
+  font-size: xx-large;
+  background-color: lightgray;
+  border-radius: 5%;
+
+}
+
+  .card-body-stori{
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+  }
+
+ .card-img-stori{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+  .carousel {
+  --current-slide: 0;
+  /* we set position relative so absolute position works properly for the buttons */
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-button {
+  /* vertically centering the buttons */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+
+  /* basic styling */
+  padding: 0;
+  margin: 0.5rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  transition: color 0.1s;
+}
+
+.carousel-button:hover {
+  color: #d39e00;
+}
+
+.carousel-button_next {
+  /* The "next slide button" will be at the right */
+  right: 0;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s;
+  transform: translateX(calc(-100% * var(--current-slide)));
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story-messages{
+  margin: 0%;
+  padding: 0%;
+}
+
+video {
+  width: 100%;
+  min-width: 300px;
+}
+
+@media screen and (min-width: 200px) {
+  .overlay {
+    height: 118%;
+  }
+}
+
+@media screen and (min-width: 200px) {
+  .carousel-button {
+    top: 29%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .carousel-button {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+}
+
+@media screen and (min-width: 200px) {
+  .overlay-story{
+    top: 15%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+    opacity: .8;
+    position: absolute;
+    bottom: 151px;
+    right: 0;
+    width: 87%;
+    margin: 101px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    text-align: center;
+    color: rgb(130, 138, 66);
+    font-size: large;
+    background-color: lightgray;
+    border-radius: 5%;
+    height: 110px;
+    height:63%;
+    padding: 10px;
+}
+  }
+
+@media screen and (min-width: 300px) {
+  .overlay-story {
+    top: 20%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    opacity: .8;
+    position: absolute;
+    bottom: 151px;
+    right: 0;
+    width: 78%;
+    margin: 102px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    text-align: center;
+    color: rgb(130, 138, 66);
+    font-size: large;
+    border-radius: 5%;
+    height: 40%;
+    height: 306px;
+    padding: 10px;
+}
+
+}
+
+@media screen and (min-width: 350px) {
+  .overlay-story {
+    top: 20%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    opacity: .8;
+    position: absolute;
+    bottom: 151px;
+    right: 0;
+    width: 78%;
+    margin: 102px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    text-align: center;
+    color: rgb(130, 138, 66);
+    font-size: large;
+    border-radius: 5%;
+    height: 40%;
+    height: 306px;
+    padding: 10px;
+}
+
+}
+
+@media screen and (min-width: 390px) {
+  .overlay-story {
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    opacity: .8;
+    position: absolute;
+    bottom: 151px;
+    right: 0;
+    width: 78%;
+    margin: 102px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    text-align: center;
+    color: rgb(130, 138, 66);
+    font-size: large;
+    border-radius: 5%;
+    height: 40%;
+    height: 306px;
+    padding: 10px;
+}
+
+}
+
+@media screen and (min-width: 400px) {
+  .overlay-story {
+    top: 16%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    opacity: .8;
+    position: absolute;
+    bottom: 151px;
+    right: 0;
+    width: 78%;
+    margin: 102px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    text-align: center;
+    color: rgb(130, 138, 66);
+    font-size: large;
+    border-radius: 5%;
+    height: 43%;
+    padding: 10px;
+}
+}
+
+@media screen and (min-width: 500px) {
+  .overlay-story{
+    top: 16%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    opacity: .8;
+    position: absolute;
+    bottom: 151px;
+    right: 0;
+    width: 62%;
+    margin: 103px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    text-align: center;
+    color: rgb(130, 138, 66);
+    font-size: large;
+    background-color: lightgray;
+    border-radius: 5%;
+    height: 42%;
+    padding: 10px;
+}
+  }
+
+  @media screen and (min-width: 768px) {
+    .overlay-story {
+      top: 16%;
+      left: 37%;
+      transform: translate(-50%, -50%);
+      opacity: .8;
+      position: absolute;
+      bottom: 151px;
+      right: 0;
+      width: 58%;
+      margin: 103px;
+      box-sizing: border-box;
+      line-height: 1.5;
+      text-align: center;
+      color: rgb(130, 138, 66);
+      font-size: large;
+      background-color: lightgray;
+      border-radius: 5%;
+      height: 32%;
+      padding: 10px;
+  }
+    }
+
+    @media screen and (min-width: 900px) {
+      .overlay-story {
+        top: 16%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        opacity: .8;
+        position: absolute;
+        bottom: 151px;
+        right: 0;
+        width: 58%;
+        margin: 103px;
+        box-sizing: border-box;
+        line-height: 1.5;
+        text-align: center;
+        color: rgb(130, 138, 66);
+        font-size: large;
+        background-color: lightgray;
+        border-radius: 5%;
+        height: 21%;
+        padding: 10px;
+    }
+      }
+  
+
+
+
+

@@ -1,0 +1,58 @@
+.nav-text {
+    color: #505763;
+    height: 45px;
+    line-height: 20px;
+    padding: 15px;
+    font-size:14px;
+}
+
+.dropdown-item { 
+    font-size: 14px !important;
+}
+
+.form-inline .input-group {
+    width: 500px;
+}
+
+
+input:focus, input:active { 
+    outline:none !important;
+    box-shadow: none !important;
+}
+
+.input-group-text { 
+    background: #f2f3f5;
+    border: none;
+    border-radius: 0px;
+
+}
+
+.input-group-txt:focus, .input-group-text:active {
+    outline: none;
+}
+
+.nav-item .btn {
+    padding: 11px 12px !important;
+    font-size: 15px;
+    border-radius: 2px;
+    line-height: 1.35;
+    font-weight: 600 !important;
+    margin-left: 5px !important;
+}
+
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.nav-item .btn-log-in{
+    color:#686f7a !important;
+    background-color: #fff;
+    border: 1px solid #505763;
+}
+
+.nav-item .btn-sign-up { 
+    color:#fff !important;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #000;
+}
