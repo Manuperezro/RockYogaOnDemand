@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+<div class="hero">
+    <div class="hero-size embed-responsive embed-responsive-16by9">
+        <video id="background-video" autoplay loop controls poster="" class="embed-responsive-item">
+            <source src="static/videos/video.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+            <h1>Your Yoga School at Home</h1>
+        </div>
+
+    </div>
+</div>
+
+<div class="carousel" data-carousel>
+    <div class="carousel-buttons">
+      <button
+        class="carousel-button carousel-button_previous"
+        data-carousel-button-previous
+      >
+        <span class="fas fa-chevron-circle-left"></span>
+      </button>
+      <button
+        class="carousel-button carousel-button_next"
+        data-carousel-button-next
+      >
+        <span class="fas fa-chevron-circle-right"></span>
+      </button>
+    </div>
+    <div class="slides" data-carousel-slides-container>
+      <div class="slide">
+        <div class="col-md-12">
+          <div class="card mb-5 shadow-sm card-stori mt-5">
+            <img src="static/images/stories1 (2).jpg" class="card-img-stori" alt="thumbnail">
+              <div class="card-body-stori">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="card-text font-weight-bold">Enjoy Our Range of Online Courses</p>
+                    <div class="font-weight-bold overlay-story">
+                      <p>Our Courses for teachers are Created to Help teachers to improve in specifics Knowledges <br> From Physical Therory to adjustments to Theorical Yoga History conceps</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      <div class="slide">
+         <div class="col-md-12">
+          <div class="card mb-5 shadow-sm card-stori mt-5">
+            <img src="static/images/stories2.jpg" class="card-img-stori" alt="thumbnail">
+              <div class="card-body-stori">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="card-text font-weight-bold">Check Our Offers</p>
+                      <div class="font-weight-bold overlay-story">
+                        <p>If You are a begginer have a look for Our Yoga Starter Courses <br> And Yoga for Begginers <br> Courses</p> 
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="col-md-12">
+        <div class="card mb-5 shadow-sm card-stori mt-5">
+          <img src="static/images/stories3.jpg" class="card-img-stori" alt="thumbnail">
+            <div class="card-body-stori">
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="font-weight-bold">Enjoy Our Range of Online Courses</p>
+                    <div class="font-weight-bold overlay-story">
+                      <p>Our Courses for teachers are Created to Help teachers to improve in specifics Knowledges <br> From Physical Therory to adjustments to Theorical Yoga History conceps</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+
+<!--Javascript-->
+
+  <script>
+    function modulo(number, mod) {
+  let result = number % mod;
+  if (result < 0) {
+    result += mod;
+  }
+  return result;
+}
+
+function setUpCarousel(carousel) {
+  function handleNext() {
+    currentSlide = modulo(currentSlide + 1, numSlides);
+    changeSlide(currentSlide);
+  }
+
+  function handlePrevious() {
+    currentSlide = modulo(currentSlide - 1, numSlides);
+    changeSlide(currentSlide);
+  }
+
+  function changeSlide(slideNumber) {
+    carousel.style.setProperty('--current-slide', slideNumber);
+  }
+
+  // get elements
+  const buttonPrevious = carousel.querySelector('[data-carousel-button-previous]');
+  const buttonNext = carousel.querySelector('[data-carousel-button-next]');
+  const slidesContainer = carousel.querySelector('[data-carousel-slides-container]');
+
+  // carousel state we need to remember
+  let currentSlide = 0;
+  const numSlides = slidesContainer.children.length;
+
+  // set up events
+  buttonPrevious.addEventListener('click', handlePrevious);
+  buttonNext.addEventListener('click', handleNext);
+}
+
+const carousels = document.querySelectorAll('[data-carousel]');
+carousels.forEach(setUpCarousel);
+  </script>
+{% endblock content %}
