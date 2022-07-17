@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light border-bottom shadow-sm bg-white">
-    <a class="navbar-brand" href="">Rock Yoga <i class="fas fa-yin-yang"></i>N Demand</a>
+    <a class="navbar-brand" href="{% url 'home' %} ">Rock Yoga <i class="fas fa-yin-yang"></i>N Demand</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,7 +50,7 @@
             <a href="{% url 'account_login' %}" class="nav-link btn btn-log-in">Log in</a>
         </div>
         <div class="nav-item">
-            <a href="" class="nav-link btn ml-3 btn-sign-up">Sign Up</a>
+            <a href="{% url 'account_signup' %}" class="nav-link btn ml-3 btn-sign-up">Sign Up</a>
         </div>
         {% endif %}
     </div>
