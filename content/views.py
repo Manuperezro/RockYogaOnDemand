@@ -12,4 +12,6 @@ def course_list(request):
     context = {
         'courses': courses,
     }
+    
+    print('Courses', courses)
     return render(request, 'content/course_list.html', context)

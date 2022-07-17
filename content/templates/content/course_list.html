@@ -7,7 +7,7 @@ Course list
 <div class="container my-5">
     <div class="row">
         {{ courses }}
-        <!-- {% for object in object_list %}
+        {% for object in object_list %}
         <div class="col-md-4">
             <div class="card my-5 mx-5 shadow-sm card-course">
                 <a href="{{ object.get_absolute_url }}">
@@ -21,7 +21,7 @@ Course list
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         {% endfor %}
     </div>
 </div>
