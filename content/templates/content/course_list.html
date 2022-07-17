@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}
+Course list
+{% endblock title %}
+{% block content %}
+{% load static %}
+<div class="container my-5">
+    <div class="row">
+        {{ courses }}
+        <!-- {% for object in object_list %}
+        <div class="col-md-4">
+            <div class="card my-5 mx-5 shadow-sm card-course">
+                <a href="{{ object.get_absolute_url }}">
+                <img src="{{ object.thumbnail }}" class="card-img-top" width="100%" height="225" alt="thumbnail">
+                 </a>
+                <div class="card-body">
+                    <p class="card-text font-weight-bold">{{ object.name }}</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <button>Add to the Shopping Bag</button>
+                        <div class="font-weight-bold pricing-text">£{{  object.price }}</div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}
